@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class ResultScreen extends StatelessWidget {
-  const ResultScreen({super.key});
+  const ResultScreen({Key? key, required this.choosenAnswers})
+      : super(key: key); // Fix the parameter name
+
+  final List<String> choosenAnswers; // Fix the variable name
 
   @override
   Widget build(BuildContext context) {
